@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="10dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+
+            android:id="@+id/imageView2"
+            android:layout_width="30dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/cb"
+            app:layout_constraintEnd_toEndOf="@+id/imageView9"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/imageView9"
+            app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+
+        <ImageView
+
+            android:id="@+id/imageView3"
+            android:layout_width="30dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/coin"
+            app:layout_constraintEnd_toEndOf="@+id/imageView2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/imageView2"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/pic"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="15dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/green_border"
+            android:elevation="8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView12"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView8"
+            app:shapeAppearanceOverlay="@style/roundimageview2" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="30dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/cb"
+            app:layout_constraintStart_toEndOf="@+id/pic"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="30dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/cb"
+            app:layout_constraintEnd_toEndOf="@+id/imageView8"
+            app:layout_constraintStart_toStartOf="@+id/imageView8"
+            app:layout_constraintTop_toBottomOf="@+id/imageView8" />
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="187dp"
+            android:layout_height="26dp"
+            android:layout_marginStart="4dp"
+            android:gravity="center_vertical"
+            android:text="Alcohol"
+            android:textSize="23dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView8"
+            app:layout_constraintStart_toEndOf="@+id/imageView8"
+            app:layout_constraintTop_toTopOf="@+id/imageView8" />
+
+        <TextView
+            android:id="@+id/start_date"
+            android:layout_width="187dp"
+            android:layout_height="26dp"
+            android:layout_marginStart="5dp"
+            android:gravity="center_vertical"
+            android:text="Gun Powder"
+            android:textColor="#000000"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView9"
+            app:layout_constraintStart_toEndOf="@+id/imageView9"
+            app:layout_constraintTop_toTopOf="@+id/imageView9" />
+
+        <TextView
+            android:id="@+id/end_date"
+            android:layout_width="187dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="5dp"
+            android:gravity="center_vertical"
+            android:text="Damage (00%)"
+            android:textColor="#000000"
+            android:textSize="23sp"
+
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+            app:layout_constraintStart_toEndOf="@+id/imageView2"
+            app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="187dp"
+            android:layout_height="26dp"
+            android:layout_marginStart="5dp"
+            android:gravity="center_vertical"
+            android:text="00,000"
+            android:textColor="#000000"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+            app:layout_constraintStart_toEndOf="@+id/imageView3"
+            app:layout_constraintTop_toTopOf="@+id/imageView3" />
+
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="30dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/user"
+            app:layout_constraintEnd_toEndOf="@+id/imageView3"
+            app:layout_constraintStart_toStartOf="@+id/imageView3"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+        <TextView
+            android:id="@+id/userMob"
+            android:layout_width="187dp"
+            android:layout_height="26dp"
+            android:gravity="center_vertical"
+            android:text="Mobile Number"
+            android:textSize="23dp"
+            android:textColor="@color/black"
+            android:layout_marginStart="5dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView12"
+            app:layout_constraintStart_toEndOf="@+id/imageView12"
+            app:layout_constraintTop_toTopOf="@+id/imageView12" />
+
+
+        <TextView
+            android:id="@+id/title_1"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/light_gray"
+            android:gravity="center|left"
+            android:paddingLeft="15dp"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            android:layout_marginBottom="10dp"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView12"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginStart="15dp"
+            android:background="@color/light_gray"
+            android:gravity="center"
+            android:text="Title"
+            android:textColor="#034C06"
+            android:textSize="20sp"
+
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/title_1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pic"
+            app:layout_constraintVertical_bias="1.0"
+            tools:ignore="MissingConstraints" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

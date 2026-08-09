@@ -1,0 +1,51 @@
+# Built application files
+*.apk
+*.aar
+*.ap_
+*.aab
+
+# Files for the ART/Dalvik VM
+*.dex
+
+# Java class files
+*.class
+
+# Generated files
+bin/
+gen/
+out/
+*.gradle/
+
+# Gradle files
+.gradle/
+build/
+
+# Local configuration file (contains SDK path, machine-specific)
+local.properties
+
+# Android Studio / IntelliJ
+.idea/
+*.iml
+*.ipr
+*.iws
+.navigation/
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Keystore files
+*.jks
+*.keystore
+
+# Log/OS files
+*.log
+.DS_Store
+Thumbs.db
+
+# Freeline
+freeline.py
+freeline/
+freeline_project_description.json
+
+# Claude Code session metadata (tooling artifact, not project content)
+.claude/

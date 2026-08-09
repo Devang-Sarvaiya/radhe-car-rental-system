@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Cars.Detail_of_car">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/imgInsurance"
+                android:layout_width="wrap_content"
+                android:layout_height="239dp"
+                android:layout_marginTop="20dp"
+                android:adjustViewBounds="true"
+                android:elevation="10dp"
+                app:shapeAppearanceOverlay="@style/roundimageview2"
+                app:layout_constraintEnd_toEndOf="@+id/imgChesis"
+                app:layout_constraintStart_toStartOf="@+id/imgChesis"
+                app:layout_constraintTop_toBottomOf="@+id/txtChesis" />
+
+            <TextView
+                android:id="@+id/txtChesis"
+                android:layout_width="338dp"
+                android:layout_height="63dp"
+                android:fontFamily="@font/nunito_extrabold"
+                android:gravity="center"
+                android:text="TextView"
+                android:textColor="@color/orange_light"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/imgChesis"
+                app:layout_constraintStart_toStartOf="@+id/imgChesis"
+                app:layout_constraintTop_toBottomOf="@+id/imgChesis" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/imgChesis"
+                android:layout_width="wrap_content"
+                android:layout_height="239dp"
+                android:layout_marginTop="40dp"
+                android:elevation="10dp"
+                android:adjustViewBounds="true"
+                app:shapeAppearanceOverlay="@style/roundimageview2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.491"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtInsurance"
+                android:layout_width="338dp"
+                android:layout_height="63dp"
+                android:gravity="center"
+                android:fontFamily="@font/nunito_extrabold"
+                android:text="TextView"
+                android:textColor="@color/orange_light"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/imgInsurance"
+                app:layout_constraintStart_toStartOf="@+id/imgInsurance"
+                app:layout_constraintTop_toBottomOf="@+id/imgInsurance" />
+
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/imgRC"
+                android:layout_width="wrap_content"
+                android:layout_height="239dp"
+                android:layout_marginTop="20dp"
+                android:elevation="10dp"
+                android:adjustViewBounds="true"
+                app:shapeAppearanceOverlay="@style/roundimageview2"
+                app:layout_constraintEnd_toEndOf="@+id/imgInsurance"
+                app:layout_constraintStart_toStartOf="@+id/imgInsurance"
+                app:layout_constraintTop_toBottomOf="@+id/txtInsurance" />
+
+            <TextView
+                android:id="@+id/txtRC"
+                android:layout_width="338dp"
+                android:layout_height="63dp"
+                android:gravity="center"
+                android:text="TextView"
+                android:fontFamily="@font/nunito_extrabold"
+                android:textColor="@color/orange_light"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/imgRC"
+                app:layout_constraintStart_toStartOf="@+id/imgRC"
+                app:layout_constraintTop_toBottomOf="@+id/imgRC" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnVerify"
+                android:layout_width="150dp"
+                android:layout_height="75dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/lg_back_green"
+                android:text="Verify"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/txtRC"
+                app:layout_constraintTop_toBottomOf="@+id/txtRC" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnDenied"
+                android:layout_width="150dp"
+                android:layout_height="75dp"
+                android:background="@drawable/lg_back_red"
+                android:text="Deny"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/btnVerify"
+                app:layout_constraintEnd_toStartOf="@+id/btnVerify"
+                app:layout_constraintStart_toStartOf="@+id/txtRC"
+                app:layout_constraintTop_toBottomOf="@+id/txtRC"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnConnect"
+                android:layout_width="350dp"
+                android:layout_height="75dp"
+                android:backgroundTint="#03A9F4"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:text="Connect Driver"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/btnVerify"
+                app:layout_constraintHorizontal_bias="0.461"
+                app:layout_constraintStart_toStartOf="@+id/btnDenied"
+                app:layout_constraintTop_toBottomOf="@+id/btnDenied"
+                app:layout_constraintVertical_bias="0.0" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

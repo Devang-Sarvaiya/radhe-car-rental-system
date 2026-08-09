@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/dastine_oramica"
+            android:text="Complete Your Profile"
+            android:textColor="@color/green"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text7"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="374dp"
+            android:layout_height="71dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:textColorHint="#909090"
+            app:boxStrokeColor="#4CAF50">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtDl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_back"
+                android:drawableLeft="@drawable/card"
+                android:drawablePadding="10dp"
+                android:hint="@string/enter_driving_licence_number"
+                android:inputType="text"
+                android:maxLength="15"
+                android:textColor="#000000" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <!-- First pair of TextView and ImageButton -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="298dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/nunito_black"
+                android:gravity="center"
+                android:text="Upload Driving Licence Pic"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/uploadUserDl"
+                android:layout_width="90dp"
+                android:layout_height="72dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/login_back"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/scan" />
+        </LinearLayout>
+
+        <!-- Second pair of TextView and ImageButton -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:fontFamily="@font/nunito_black"
+                android:text="Upload your Aadhar Front pic"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/img_aadhaar_front"
+                android:layout_width="90dp"
+                android:layout_height="72dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/login_back"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/scan" />
+        </LinearLayout>
+
+        <!-- Third pair of TextView and ImageButton -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:fontFamily="@font/nunito_black"
+                android:text="Upload your Aadhaar Back pic"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/img_aadhaar_back"
+                android:layout_width="90dp"
+                android:layout_height="72dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/login_back"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/scan" />
+        </LinearLayout>
+
+        <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnregister"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/lg_back_btn"
+            android:text="update"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</ScrollView>

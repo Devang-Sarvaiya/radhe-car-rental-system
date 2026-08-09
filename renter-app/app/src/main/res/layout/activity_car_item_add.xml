@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Car_item_add">
+
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="25sp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/green_border"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+      <ImageButton
+          android:id="@+id/btnUpload"
+          android:layout_width="150dp"
+          android:layout_height="150dp"
+          android:layout_gravity="center"
+          android:layout_marginTop="10dp"
+          android:src="@drawable/baseline_photo_camera_24"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.50"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          tools:ignore="SpeakableTextPresentCheck" />
+
+      <androidx.recyclerview.widget.RecyclerView
+          android:id="@+id/recyclerView_1"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_below="@id/btnAddItem"
+          android:layout_marginTop="8dp"/>
+
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+          android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/modelName"
+            style="@style/TEXT"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0.6"
+            android:background="@drawable/green_border"
+            android:hint="Add Model Name"
+            android:inputType="textPersonName"
+            android:maxLines="1"
+            android:padding="16dp" />
+
+        <EditText
+            android:id="@+id/modelDescription"
+
+            style="@style/TEXT"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0.6"
+            android:background="@drawable/green_border"
+            android:hint="Add Model description"
+            android:maxLines="5"
+            android:padding="16dp" />
+
+        <EditText
+            android:id="@+id/rentPerDay"
+            style="@style/TEXT"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0.6"
+            android:background="@drawable/green_border"
+            android:hint="₹0000 Rent/- Per Day"
+            android:inputType="number"
+            android:maxLength="4"
+            android:padding="16dp" />
+
+        <EditText
+            android:id="@+id/maximumSpeed"
+            style="@style/TEXT"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0.6"
+            android:background="@drawable/green_border"
+            android:hint="000 Maximum Speed"
+            android:maxLength="3"
+            android:inputType="number"
+            android:padding="16dp" />
+
+        <EditText
+            android:id="@+id/Fuel"
+            style="@style/TEXT"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0.6"
+            android:maxLength="3"
+            android:background="@drawable/green_border"
+            android:hint="000 Ltr. Fuel"
+            android:inputType="number"
+            android:padding="16dp" />
+
+        <EditText
+            android:id="@+id/carRating"
+            style="@style/TEXT"
+            android:inputType="numberDecimal"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0.6"
+            android:background="@drawable/green_border"
+            android:hint="0.0 rating"
+            android:padding="16dp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:background="@drawable/green_border"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="@+id/spinner"
+            app:layout_constraintTop_toBottomOf="@+id/spinner">
+
+          <RadioButton
+              android:id="@+id/rdb_mannual"
+              android:layout_width="match_parent"
+              android:layout_height="50dp"
+              android:text="Mannual"
+              android:textSize="20sp"
+              android:textStyle="bold" />
+
+          <RadioButton
+              android:id="@+id/rdb_auto"
+              android:layout_width="match_parent"
+              android:layout_height="50dp"
+              android:text="Auto-Matic"
+              android:textSize="20sp"
+              android:textStyle="bold" />
+
+        </RadioGroup>
+
+
+
+        <EditText
+            android:id="@+id/numberPassengers"
+            style="@style/TEXT"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0.6"
+            android:background="@drawable/green_border"
+            android:hint="0 Passengers"
+            android:inputType="number"
+            android:maxLength="2"
+            android:padding="16dp" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            style="@style/TEXT"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:elevation="2dp" />
+
+        <Spinner
+            android:id="@+id/spinner1"
+            style="@style/TEXT"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:elevation="2dp" />
+
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminateTint="@color/lavender"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="230dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="50dp"
+            android:orientation="horizontal">
+
+          <com.google.android.material.floatingactionbutton.FloatingActionButton
+              android:id="@+id/btnAddItem"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_marginStart="20dp"
+              android:backgroundTint="@color/green"
+              android:src="@drawable/baseline_send_24"
+              style="@style/TEXT"
+              tools:ignore="SpeakableTextPresentCheck" />
+        </LinearLayout>
+      </LinearLayout>
+    </LinearLayout>
+  </ScrollView>
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<LinearLayout-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:context=".Car_item_add">-->
+
+<!--  <ScrollView-->
+<!--      android:layout_width="match_parent"-->
+<!--      android:layout_height="match_parent">-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="15dp"-->
+<!--        android:layout_marginTop="25sp"-->
+<!--        android:layout_marginEnd="15dp"-->
+<!--        android:layout_marginBottom="50dp"-->
+<!--        android:background="@drawable/green_border"-->
+<!--        android:orientation="vertical"-->
+<!--        android:padding="20dp">-->
+
+<!--      <ImageButton-->
+<!--          android:id="@+id/uploadImage"-->
+<!--          android:layout_width="150dp"-->
+<!--          android:layout_height="150dp"-->
+<!--          android:layout_gravity="center"-->
+<!--          android:layout_marginTop="10dp"-->
+<!--          android:src="@drawable/baseline_photo_camera_24"-->
+<!--          app:layout_constraintEnd_toEndOf="parent"-->
+<!--          app:layout_constraintHorizontal_bias="0.50"-->
+<!--          app:layout_constraintStart_toStartOf="parent"-->
+<!--          app:layout_constraintTop_toTopOf="parent"-->
+<!--          tools:ignore="SpeakableTextPresentCheck" />-->
+
+<!--      <LinearLayout-->
+<!--          android:layout_width="match_parent"-->
+<!--          android:layout_height="wrap_content"-->
+<!--          android:layout_marginTop="10dp"-->
+<!--          android:orientation="vertical">-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/modelName"-->
+<!--            style="@style/TEXT"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="60dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_weight="0.6"-->
+<!--            android:background="@drawable/green_border"-->
+<!--            android:hint="Add Model Name"-->
+<!--            android:inputType="textPersonName"-->
+<!--            android:maxLines="1"-->
+<!--            android:padding="16dp" />-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/modelDescription"-->
+
+<!--            style="@style/TEXT"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="60dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_weight="0.6"-->
+<!--            android:background="@drawable/green_border"-->
+<!--            android:hint="Add Model description"-->
+<!--            android:maxLines="5"-->
+<!--            android:padding="16dp" />-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/rentPerDay"-->
+<!--            style="@style/TEXT"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="60dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_weight="0.6"-->
+<!--            android:background="@drawable/green_border"-->
+<!--            android:hint="₹0000 Rent/- Per Day"-->
+<!--            android:inputType="number"-->
+<!--            android:maxLength="4"-->
+<!--            android:padding="16dp" />-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/maximumSpeed"-->
+<!--            style="@style/TEXT"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="60dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_weight="0.6"-->
+<!--            android:background="@drawable/green_border"-->
+<!--            android:hint="000 Maximum Speed"-->
+<!--            android:maxLength="3"-->
+<!--            android:inputType="number"-->
+<!--            android:padding="16dp" />-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/Fuel"-->
+<!--            style="@style/TEXT"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="60dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_weight="0.6"-->
+<!--            android:maxLength="3"-->
+<!--            android:background="@drawable/green_border"-->
+<!--            android:hint="000 Ltr. Fuel"-->
+<!--            android:inputType="number"-->
+<!--            android:padding="16dp" />-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/carRating"-->
+<!--            style="@style/TEXT"-->
+<!--            android:inputType="numberDecimal"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="60dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_weight="0.6"-->
+<!--            android:background="@drawable/green_border"-->
+<!--            android:hint="0.0 rating"-->
+<!--            android:padding="16dp" />-->
+
+<!--        <RadioGroup-->
+<!--            android:id="@+id/radioGroup1"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="140dp"-->
+<!--            android:background="@drawable/green_border"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:gravity="center"-->
+<!--            app:layout_constraintEnd_toEndOf="@+id/spinner"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/spinner">-->
+
+<!--          <RadioButton-->
+<!--              android:id="@+id/rdb_mannual"-->
+<!--              android:layout_width="match_parent"-->
+<!--              android:layout_height="50dp"-->
+<!--              android:text="Mannual"-->
+<!--              android:textSize="20sp"-->
+<!--              android:textStyle="bold" />-->
+
+<!--          <RadioButton-->
+<!--              android:id="@+id/rdb_auto"-->
+<!--              android:layout_width="match_parent"-->
+<!--              android:layout_height="50dp"-->
+<!--              android:text="Auto-Matic"-->
+<!--              android:textSize="20sp"-->
+<!--              android:textStyle="bold" />-->
+
+<!--        </RadioGroup>-->
+
+
+
+<!--        <EditText-->
+<!--            android:id="@+id/numberPassengers"-->
+<!--            style="@style/TEXT"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="60dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_weight="0.6"-->
+<!--            android:background="@drawable/green_border"-->
+<!--            android:hint="0 Passengers"-->
+<!--            android:inputType="number"-->
+<!--            android:maxLength="2"-->
+<!--            android:padding="16dp" />-->
+
+<!--        <Spinner-->
+<!--            android:id="@+id/spinner"-->
+<!--            style="@style/TEXT"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="60dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:elevation="2dp" />-->
+
+<!--        <Spinner-->
+<!--            android:id="@+id/spinner1"-->
+<!--            style="@style/TEXT"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="60dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:elevation="2dp" />-->
+
+
+<!--        <ProgressBar-->
+<!--            android:id="@+id/progressBar"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:indeterminateTint="@color/lavender"-->
+<!--            android:visibility="invisible" />-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="230dp"-->
+<!--            android:layout_marginTop="30dp"-->
+<!--            android:layout_marginBottom="50dp"-->
+<!--            android:orientation="horizontal">-->
+
+<!--          <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--              android:id="@+id/uploadButton"-->
+<!--              android:layout_width="match_parent"-->
+<!--              android:layout_height="match_parent"-->
+<!--              android:layout_marginStart="20dp"-->
+<!--              android:backgroundTint="@color/green"-->
+<!--              android:src="@drawable/baseline_send_24"-->
+<!--              style="@style/TEXT"-->
+<!--              tools:ignore="SpeakableTextPresentCheck" />-->
+<!--        </LinearLayout>-->
+<!--      </LinearLayout>-->
+<!--    </LinearLayout>-->
+<!--  </ScrollView>-->
+<!--</LinearLayout>-->

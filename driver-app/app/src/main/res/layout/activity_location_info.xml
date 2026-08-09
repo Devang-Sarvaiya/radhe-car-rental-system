@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BDE4B8"
+
+    tools:context=".Live_location.Location_info">
+    <TextView
+        android:id="@+id/locationText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location: "
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"/>
+
+    <Button
+        android:id="@+id/startLocationBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Location Updates"
+        android:layout_below="@id/locationText"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:onClick="onStartLocationButtonClick"/>
+
+    <Button
+        android:id="@+id/stopLocationBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop Location Updates"
+        android:layout_below="@id/startLocationBtn"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:onClick="onStopLocationButtonClick"/>
+
+    <org.osmdroid.views.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/stopLocationBtn"
+        android:layout_marginTop="16dp"/>
+
+</RelativeLayout>

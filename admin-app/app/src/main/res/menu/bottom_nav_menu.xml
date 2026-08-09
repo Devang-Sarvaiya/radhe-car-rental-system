@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navRenters"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/car_rent"
+        android:title="RENTERS" />
+    <item
+        android:id="@+id/navUsers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/group"
+        android:title="USERS" />
+
+    <item
+        android:id="@+id/navMore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/more"
+        android:title="MORE" />
+</menu>

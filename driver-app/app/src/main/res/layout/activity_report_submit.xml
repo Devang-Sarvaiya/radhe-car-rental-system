@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="#BDE4B8"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BookHistory.report_submit">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="364dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/report_bg1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <CheckBox
+            android:id="@+id/chb_alco"
+            android:layout_width="320dp"
+            android:layout_height="61dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/report_bg_cb"
+            android:gravity="center"
+            android:layoutDirection="rtl"
+            android:text="Alchohol Detact"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <CheckBox
+            android:id="@+id/chb_gun"
+            android:layout_width="320dp"
+            android:layout_height="61dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/report_bg_cb"
+            android:gravity="center"
+            android:layoutDirection="rtl"
+            android:text="Gun Powder Detact"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/chb_alco"
+            app:layout_constraintStart_toStartOf="@+id/chb_alco"
+            app:layout_constraintTop_toBottomOf="@+id/chb_alco" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout4"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/report_bg1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3">
+
+
+        <CheckBox
+            android:id="@+id/chb_dm_0"
+            android:layout_width="320dp"
+            android:layout_height="61dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/report_bg_cb"
+            android:gravity="center"
+            android:layoutDirection="rtl"
+            android:text="Car Damage (0%)"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <CheckBox
+            android:id="@+id/chb_dn_20"
+            android:layout_width="320dp"
+            android:layout_height="61dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/report_bg_cb"
+            android:gravity="center"
+            android:layoutDirection="rtl"
+            android:text="Car Damage (20%)"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/chb_dm_0"
+            app:layout_constraintStart_toStartOf="@+id/chb_dm_0"
+            app:layout_constraintTop_toBottomOf="@+id/chb_dm_0" />
+
+        <CheckBox
+            android:id="@+id/chb_dm_40"
+            android:layout_width="320dp"
+            android:layout_height="61dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/report_bg_cb"
+            android:gravity="center"
+            android:layoutDirection="rtl"
+            android:text="Car Damage (40%)"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/chb_dn_20"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/chb_dn_20"
+            app:layout_constraintTop_toBottomOf="@+id/chb_dn_20" />
+
+
+
+        <CheckBox
+            android:id="@+id/chb_dm_80"
+            android:layout_width="320dp"
+            android:layout_height="61dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/report_bg_cb"
+            android:gravity="center"
+            android:layoutDirection="rtl"
+            android:text="Car Damage (80%)"
+
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/chb_dm_40"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/chb_dm_40"
+            app:layout_constraintTop_toBottomOf="@+id/chb_dm_40" />
+        <CheckBox
+            android:id="@+id/chb_dm_100"
+            android:layout_width="320dp"
+            android:layout_height="61dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/report_bg_cb"
+            android:gravity="center"
+            android:layoutDirection="rtl"
+            android:text="Car Damage (100%)"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/chb_dm_80"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/chb_dm_80"
+            app:layout_constraintTop_toBottomOf="@+id/chb_dm_80" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="301dp"
+        android:layout_height="68dp"
+        android:text="Submit Report"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:backgroundTint="@color/green"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/constraintLayout4"
+        app:layout_constraintStart_toStartOf="@+id/constraintLayout4"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout4" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

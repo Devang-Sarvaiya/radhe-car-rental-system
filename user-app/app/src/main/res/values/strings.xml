@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Radhe Rents</string>
+    <!--    <string name="app_name">Car On Rent</string>-->
+    <string name="total_amount">Total Amount</string>
+    <string name="address">Address</string>
+    <string name="rent_per_day">Rent per Day</string>
+    <string name="starting_date">Starting Date</string>
+    <string name="day">Day</string>
+    <string name="pay">Pay</string>
+    <string name="select_date">Select Date</string>
+    <string name="skip"><u>Skip</u></string>
+    <string name="skip1">Skip</string>
+    <string name="find">Find</string>
+    <string name="to">To</string>
+    <string name="name">Name</string>
+    <string name="read_more"><u>Read More</u></string>
+    <string name="sign_up"><u>Sign Up</u></string>
+    <string name="Forgot_pass"><u>Forgot Password?</u></string>
+    <string name="edit">Edit</string>
+    <string name="passsword">Password</string>
+    <string name="email">Email</string>
+    <string name="change">Change</string>
+    <string name="enter_driving_licence_number">Driving Licence</string>
+    <string name="login">LOGIN</string>
+    <string name="ride_confirmation">Ride\nConfirmation</string>
+</resources>

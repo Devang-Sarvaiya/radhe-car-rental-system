@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" /> <!-- <uses-permission android:name="android.permission.INTERNET" /> -->
+    <!-- <uses-permission android:name="android.permission.CALL_PHONE" /> -->
+    <!-- <uses-permission android:name="android.permission.POST_NOTIFICATIONS" /> -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- <uses-permission android:name="android.permission.FOREGROUND_SERVICE" /> -->
+    <uses-feature android:name="android.hardware.location.gps" />
+    <uses-feature android:name="android.hardware.location.network" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- <uses-permission android:name="android.permission.FOREGROUND_SERVICE" /> -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+
+    <meta-data
+        android:name="com.google.android.geo.API_KEY"
+        android:value="YOUR_GOOGLE_MAPS_API_KEY" />
+
+    <queries>
+        <package android:name="com.google.android.apps.nbu.paisa.user" />
+        <package android:name="com.phonepe.app" />
+
+        <intent>
+            <action android:name="android.intent.action.SEND" />
+        </intent>
+    </queries>
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Base.Theme.CarOnRentRenter"
+        tools:targetApi="31">
+        <activity
+            android:name=".BookingHistory.bookHistory2"
+            android:exported="false" />
+        <activity
+            android:name=".Report.Report_show"
+            android:exported="false" />
+        <activity
+            android:name=".driver_detail"
+            android:exported="false" />
+        <activity
+            android:name=".Login_Driver"
+            android:exported="false" />
+        <activity
+            android:name=".Live_location.Location_info"
+            android:exported="false" />
+        <activity
+            android:name=".CompleteProfile"
+            android:exported="false" />
+        <activity
+            android:name=".Tourism.Tourism_Place_Details"
+            android:exported="false" />
+        <activity
+            android:name=".Tourism.Tourism_Data_add"
+            android:exported="false" />
+        <activity
+            android:name=".Tourism.Tourism_place_show"
+            android:exported="false" />
+        <activity
+            android:name=".BookingHistory.bookHistory1"
+            android:exported="false" />
+        <activity
+            android:name=".statusChanged"
+            android:exported="false" />
+        <activity
+            android:name=".PaymentHistory.expences"
+            android:exported="false" />
+        <activity
+            android:name=".PaymentHistory.income_mode"
+            android:exported="false" />
+        <activity
+            android:name=".PaymentHistory.payment_confirm_deny"
+            android:exported="false" />
+        <activity
+            android:name=".Payments"
+            android:exported="true" />
+        <activity
+            android:name=".PaymentHistory.payment_history_mode"
+            android:exported="false" />
+        <activity
+            android:name=".E_commerce.gadget_history"
+            android:exported="false" />
+        <activity
+            android:name=".E_commerce.e_com_Renters_gadgets"
+            android:exported="false" />
+        <activity
+            android:name=".E_commerce.e_com_gadgets_mode"
+            android:exported="false" />
+        <activity
+            android:name=".BookingHistory.bookHistory"
+            android:exported="false" />
+        <activity
+            android:name=".For_new_Project.filter_data_show"
+            android:exported="false" />
+        <activity
+            android:name=".BookingDateSelection"
+            android:exported="false" />
+        <activity
+            android:name=".For_new_Project.date_selection"
+            android:exported="true" />
+        <activity
+            android:name=".E_commerce.address_for_gadget"
+            android:exported="false" />
+        <activity
+            android:name=".E_commerce.Detail_e_com"
+            android:exported="true" />
+        <activity
+            android:name=".Driver.driver_mode"
+            android:exported="false" />
+        <activity
+            android:name=".Driver.show_driver"
+            android:exported="false" />
+        <activity
+            android:name=".Driver.add_driver"
+            android:exported="false" />
+        <activity
+            android:name=".Add_car.show_car"
+            android:exported="false" />
+        <activity
+            android:name=".Add_car.car_mode"
+            android:exported="false" />
+        <activity
+            android:name=".E_commerce.e_com_mode"
+            android:exported="false" />
+        <activity
+            android:name=".E_commerce.e_commerce_item_add"
+            android:exported="false" />
+        <activity
+            android:name=".E_commerce.e_commerce_gadgets"
+            android:exported="true" />
+        <activity
+            android:name=".Add_car.add_car"
+            android:exported="false" />
+        <activity
+            android:name=".chatbot.ChatMain"
+            android:exported="false" />
+        <activity
+            android:name=".Pdf_generator"
+            android:exported="true" />
+        <activity
+            android:name=".Feedback"
+            android:exported="true" />
+        <activity
+            android:name=".MainFragment"
+            android:exported="true"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Payment.Main_Payment"
+            android:exported="true" />
+        <activity
+            android:name=".Date_Book"
+            android:exported="true" />
+        <activity
+            android:name=".ThankYou"
+            android:exported="true" />
+        <activity
+            android:name=".Settings"
+            android:exported="true" />
+        <activity
+            android:name=".EditProfile"
+            android:exported="true" />
+        <activity
+            android:name=".Favorite"
+            android:exported="true" />
+        <activity
+            android:name=".Detail_Of_Car"
+            android:exported="true" />
+        <activity
+            android:name=".Home"
+            android:exported="true" />
+        <activity
+            android:name=".Loc"
+            android:exported="false" />
+        <activity
+            android:name=".SignUp"
+            android:exported="true" />
+        <activity
+            android:name=".Profile_Ui"
+            android:exported="true" />
+        <activity
+            android:name=".Login"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.caronrent.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

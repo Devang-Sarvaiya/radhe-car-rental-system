@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- <uses-permission android:name="android.permission.FOREGROUND_SERVICE" /> -->
+    <uses-feature android:name="android.hardware.location.gps" />
+    <uses-feature android:name="android.hardware.location.network" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- <uses-permission android:name="android.permission.FOREGROUND_SERVICE" /> -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+
+    <meta-data
+        android:name="com.google.android.geo.API_KEY"
+        android:value="YOUR_GOOGLE_MAPS_API_KEY" />
+
+    <queries>
+        <package android:name="com.google.android.apps.nbu.paisa.user" />
+        <package android:name="com.phonepe.app" />
+
+        <intent>
+            <action android:name="android.intent.action.SEND" />
+        </intent>
+    </queries>
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Base.Theme.CarOnRentRenter"
+        tools:targetApi="31">
+        <activity
+            android:name=".DriverID"
+            android:exported="true" />
+        <activity
+            android:name=".Demo2"
+            android:exported="false" />
+        <activity
+            android:name=".Demo"
+            android:exported="true" />
+        <activity
+            android:name=".Tourism.Tourism_Place_Details"
+            android:exported="false" />
+
+        <activity
+            android:name=".Tourism.Tourism_Data_add"
+            android:exported="false" />
+        <activity
+            android:name=".Tourism.Tourism_place_show"
+            android:exported="false" />
+
+        <activity
+            android:name=".Safety_feature.Safety_Feature_Details"
+            android:exported="false" />
+
+        <activity
+            android:name=".Safety_feature.Safety_Data_add"
+            android:exported="false" />
+        <activity
+            android:name=".Safety_feature.Safety_feature_show"
+            android:exported="false" />
+
+
+        <activity
+            android:name=".Review"
+            android:exported="false" />
+        <activity
+            android:name=".Extend.Extend_new_payment"
+            android:exported="false" />
+        <activity
+            android:name=".Extend.DetailExtend"
+            android:exported="false" />
+        <activity
+            android:name=".Verification.verify_your_self"
+            android:exported="false" />
+        <activity
+            android:name=".ThankYou"
+            android:exported="true" />
+        <activity
+            android:name=".verify_otp"
+            android:exported="false" />
+        <activity
+            android:name=".forgot_password"
+            android:exported="false" />
+        <activity
+            android:name=".Payment.Payment_History"
+            android:exported="false" />
+        <activity
+            android:name=".CompleteProfile"
+            android:exported="true" />
+        <activity
+            android:name=".BookHistory.bookingHistory"
+            android:exported="false" />
+        <activity
+            android:name=".Payment.Main_Payment"
+            android:exported="true" />
+        <activity
+            android:name=".Cat_menu"
+            android:exported="false" />
+        <activity
+            android:name=".TNC.MainTNC"
+            android:exported="true" />
+        <activity
+            android:name=".Compass"
+            android:exported="true" />
+        <activity
+            android:name=".Live_location.Location_info"
+            android:exported="true" />
+        <activity
+            android:name=".MainFragment"
+            android:exported="true"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Date_Book"
+            android:exported="true" />
+        <activity
+            android:name=".Car_Menu"
+            android:exported="false" />
+        <activity
+            android:name=".Settings"
+            android:exported="true" />
+        <activity
+            android:name=".EditProfile"
+            android:exported="true" />
+        <activity
+            android:name=".chatbot.ChatMain"
+            android:exported="true" />
+        <activity
+            android:name=".Favorite"
+            android:exported="true" />
+        <activity
+            android:name=".Home"
+            android:exported="false" />
+        <activity
+            android:name=".Loc"
+            android:exported="false" />
+        <activity
+            android:name=".SignUp"
+            android:exported="true" />
+        <activity
+            android:name=".Detail"
+            android:exported="true" />
+        <activity
+            android:name=".Profile_Ui"
+            android:exported="true" />
+        <activity
+            android:name=".For_new_Project.filter_data_show"
+            android:exported="true" />
+        <activity
+            android:name=".For_new_Project.date_selection"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Login"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name="com.razorpay.RzpTokenReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="rzp.device_token.share" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.razorpay.CheckoutActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/CheckoutTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <data
+                    android:host="rzp.io"
+                    android:scheme="io.rzp" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="138dp"
+        android:layout_height="69dp"
+        android:text="Download"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Car Rental app Invoice Download"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:context=".MainActivity">-->
+
+<!--    <ScrollView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical">-->
+
+<!--            &lt;!&ndash;            <androidx.constraintlayout.widget.ConstraintLayout&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:layout_width="match_parent"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:layout_height="match_parent">&ndash;&gt;-->
+
+<!--            &lt;!&ndash;&lt;!&ndash;                <ImageView&ndash;&gt;&ndash;&gt;-->
+<!--            &lt;!&ndash;&lt;!&ndash;                    android:id="@+id/imagProfile"&ndash;&gt;&ndash;&gt;-->
+<!--            &lt;!&ndash;&lt;!&ndash;                    android:layout_width="60dp"&ndash;&gt;&ndash;&gt;-->
+<!--            &lt;!&ndash;&lt;!&ndash;                    android:layout_height="69dp"&ndash;&gt;&ndash;&gt;-->
+<!--            &lt;!&ndash;&lt;!&ndash;                    android:layout_marginStart="32dp"&ndash;&gt;&ndash;&gt;-->
+<!--            &lt;!&ndash;&lt;!&ndash;                    android:layout_marginTop="32dp"&ndash;&gt;&ndash;&gt;-->
+<!--            &lt;!&ndash;&lt;!&ndash;                    android:src="@drawable/baseline_airline_seat_recline_normal_24"&ndash;&gt;&ndash;&gt;-->
+<!--            &lt;!&ndash;&lt;!&ndash;                    app:layout_constraintStart_toStartOf="parent"&ndash;&gt;&ndash;&gt;-->
+<!--            &lt;!&ndash;&lt;!&ndash;                    app:layout_constraintTop_toTopOf="parent" />&ndash;&gt;&ndash;&gt;-->
+
+<!--            &lt;!&ndash;                <androidx.cardview.widget.CardView&ndash;&gt;-->
+
+<!--            &lt;!&ndash;                    android:id="@+id/cardView2"&ndash;&gt;-->
+<!--            &lt;!&ndash;                    android:layout_width="100dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                    android:layout_height="100dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                    app:cardCornerRadius="150dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                    app:layout_constraintBottom_toBottomOf="parent"&ndash;&gt;-->
+<!--            &lt;!&ndash;                    app:layout_constraintStart_toStartOf="parent"&ndash;&gt;-->
+<!--            &lt;!&ndash;                    app:layout_constraintTop_toTopOf="parent">&ndash;&gt;-->
+
+<!--            &lt;!&ndash;                    <ImageView&ndash;&gt;-->
+<!--            &lt;!&ndash;                        android:id="@+id/imagProfile"&ndash;&gt;-->
+<!--            &lt;!&ndash;                        android:layout_width="match_parent"&ndash;&gt;-->
+<!--            &lt;!&ndash;                        android:layout_height="match_parent"&ndash;&gt;-->
+<!--            &lt;!&ndash;                        android:scaleType="centerCrop"&ndash;&gt;-->
+<!--            &lt;!&ndash;                        app:layout_constraintStart_toStartOf="parent"&ndash;&gt;-->
+<!--            &lt;!&ndash;                        app:layout_constraintTop_toTopOf="parent"&ndash;&gt;-->
+<!--            &lt;!&ndash;                        tools:srcCompat="@tools:sample/avatars" />&ndash;&gt;-->
+<!--            &lt;!&ndash;                </androidx.cardview.widget.CardView>&ndash;&gt;-->
+
+
+<!--            <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_marginStart="24dp"-->
+<!--                android:layout_marginTop="15dp"-->
+<!--                android:layout_marginEnd="24dp">-->
+
+<!--                <androidx.cardview.widget.CardView-->
+
+<!--                    android:id="@+id/cardView2"-->
+<!--                    android:layout_width="87dp"-->
+<!--                    android:layout_height="84dp"-->
+<!--                    app:cardCornerRadius="150dp"-->
+<!--                    app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                    app:layout_constraintStart_toStartOf="parent"-->
+<!--                    app:layout_constraintTop_toTopOf="parent">-->
+
+<!--                    <ImageView-->
+<!--                        android:id="@+id/imagProfile"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:scaleType="centerCrop"-->
+<!--                        app:layout_constraintStart_toStartOf="parent"-->
+<!--                        app:layout_constraintTop_toTopOf="parent"-->
+<!--                        tools:srcCompat="@tools:sample/avatars" />-->
+<!--                </androidx.cardview.widget.CardView>-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/textView5"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginStart="16dp"-->
+<!--                    android:layout_marginTop="16dp"-->
+<!--                    android:text="Welcome back"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="16sp"-->
+<!--                    app:layout_constraintStart_toEndOf="@+id/cardView2"-->
+<!--                    app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/txtName"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Demo name"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="27sp"-->
+<!--                    android:textStyle="bold"-->
+<!--                    app:layout_constraintStart_toStartOf="@+id/textView5"-->
+<!--                    app:layout_constraintTop_toBottomOf="@+id/textView5" />-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/imageView4"-->
+<!--                    android:layout_width="40dp"-->
+<!--                    android:layout_height="39dp"-->
+<!--                    android:layout_marginEnd="32dp"-->
+<!--                    android:src="@drawable/baseline_add_location_24"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent" />-->
+
+<!--            </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/editTextText"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:layout_marginStart="32dp"-->
+<!--                android:layout_marginTop="16dp"-->
+<!--                android:layout_marginEnd="32dp"-->
+<!--                android:background="@drawable/edit_text_search_bg"-->
+<!--                android:drawableStart="@drawable/baseline_search_24"-->
+<!--                android:paddingLeft="8dp"-->
+<!--                android:drawablePadding="8dp"-->
+<!--                android:ems="10"-->
+<!--                android:hint="Search here..."-->
+<!--                android:inputType="text"-->
+<!--                android:textStyle="italic" />-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:orientation="vertical">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_marginTop="16dp"-->
+<!--                    android:orientation="horizontal">-->
+
+<!--                    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                        android:id="@+id/cat_sports"-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:layout_marginStart="32dp"-->
+<!--                        android:layout_marginEnd="8dp"-->
+<!--                        android:layout_weight="0.5"-->
+<!--                        android:background="@drawable/cat_bg">-->
+
+<!--                        <ImageView-->
+<!--                            android:id="@+id/imageView5"-->
+<!--                            android:layout_width="61dp"-->
+<!--                            android:layout_height="73dp"-->
+<!--                            android:layout_marginEnd="8dp"-->
+<!--                            android:scaleType="centerInside"-->
+
+<!--                            android:src="@drawable/lambo"-->
+<!--                            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                            app:layout_constraintEnd_toEndOf="parent"-->
+<!--                            app:layout_constraintTop_toTopOf="parent"-->
+<!--                            tools:ignore="DuplicateIds" />-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/textView8"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginStart="16dp"-->
+<!--                            android:text="Sports"-->
+<!--                            android:textColor="@color/black"-->
+<!--                            android:textStyle="bold"-->
+<!--                            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                            app:layout_constraintStart_toStartOf="parent"-->
+<!--                            app:layout_constraintTop_toTopOf="parent"-->
+<!--                            tools:ignore="DuplicateIds" />-->
+<!--                    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+<!--                    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                        android:id="@+id/cat_wedding"-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="70dp"-->
+<!--                        android:layout_marginStart="8dp"-->
+<!--                        android:layout_marginEnd="32dp"-->
+<!--                        android:layout_weight="0.5"-->
+<!--                        android:background="@drawable/cat_bg">-->
+
+<!--                        <ImageView-->
+<!--                            android:id="@+id/imageView5"-->
+<!--                            android:layout_width="61dp"-->
+<!--                            android:layout_height="73dp"-->
+<!--                            android:layout_marginEnd="8dp"-->
+<!--                            android:scaleType="centerInside"-->
+
+<!--                            android:src="@drawable/bmw"-->
+<!--                            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                            app:layout_constraintEnd_toEndOf="parent"-->
+<!--                            app:layout_constraintTop_toTopOf="parent"-->
+<!--                            tools:ignore="DuplicateIds" />-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/textView8"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginStart="16dp"-->
+<!--                            android:text="Wedding"-->
+<!--                            android:textColor="@color/black"-->
+<!--                            android:textStyle="bold"-->
+<!--                            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                            app:layout_constraintStart_toStartOf="parent"-->
+<!--                            app:layout_constraintTop_toTopOf="parent"-->
+<!--                            tools:ignore="DuplicateIds" />-->
+<!--                    </androidx.constraintlayout.widget.ConstraintLayout>-->
+<!--                </LinearLayout>-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_marginTop="16dp"-->
+<!--                    android:orientation="horizontal">-->
+
+<!--                    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                        android:id="@+id/cat_tour"-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:layout_marginStart="32dp"-->
+<!--                        android:layout_marginEnd="8dp"-->
+<!--                        android:layout_weight="0.5"-->
+<!--                        android:background="@drawable/cat_bg">-->
+
+<!--                        <ImageView-->
+<!--                            android:id="@+id/imageView5"-->
+<!--                            android:layout_width="61dp"-->
+<!--                            android:layout_height="73dp"-->
+<!--                            android:layout_marginEnd="8dp"-->
+<!--                            android:scaleType="centerInside"-->
+
+<!--                            android:src="@drawable/skoda"-->
+<!--                            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                            app:layout_constraintEnd_toEndOf="parent"-->
+<!--                            app:layout_constraintTop_toTopOf="parent"-->
+<!--                            tools:ignore="DuplicateIds" />-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/textView8"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginStart="16dp"-->
+<!--                            android:text="Tour"-->
+<!--                            android:textColor="@color/black"-->
+<!--                            android:textStyle="bold"-->
+<!--                            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                            app:layout_constraintStart_toStartOf="parent"-->
+<!--                            app:layout_constraintTop_toTopOf="parent"-->
+<!--                            tools:ignore="DuplicateIds" />-->
+<!--                    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+<!--                    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                        android:id="@+id/cat_all"-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="70dp"-->
+<!--                        android:layout_marginStart="8dp"-->
+<!--                        android:layout_marginEnd="32dp"-->
+<!--                        android:layout_weight="0.5"-->
+<!--                        android:background="@drawable/cat_bg">-->
+
+<!--                        <ImageView-->
+<!--                            android:id="@+id/imageView5"-->
+<!--                            android:layout_width="61dp"-->
+<!--                            android:layout_height="73dp"-->
+<!--                            android:layout_marginEnd="8dp"-->
+<!--                            android:scaleType="centerInside"-->
+<!--                            android:src="@drawable/all"-->
+<!--                            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                            app:layout_constraintEnd_toEndOf="parent"-->
+<!--                            app:layout_constraintTop_toTopOf="parent"-->
+<!--                            tools:ignore="DuplicateIds" />-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/textView8"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginStart="16dp"-->
+<!--                            android:text="All"-->
+<!--                            android:textColor="@color/black"-->
+<!--                            android:textStyle="bold"-->
+<!--                            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                            app:layout_constraintStart_toStartOf="parent"-->
+<!--                            app:layout_constraintTop_toTopOf="parent"-->
+<!--                            tools:ignore="DuplicateIds" />-->
+<!--                    </androidx.constraintlayout.widget.ConstraintLayout>-->
+<!--                </LinearLayout>-->
+<!--            </LinearLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_marginStart="32dp"-->
+<!--                android:layout_marginTop="24dp"-->
+<!--                android:layout_marginEnd="32dp"-->
+<!--                android:orientation="horizontal">-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/textView101"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:text="Popular"-->
+<!--                    android:textColor="#000000"-->
+<!--                    android:textSize="20sp"-->
+<!--                    android:textStyle="bold" />-->
+
+
+<!--                <TextView-->
+<!--                    android:id="@+id/textView11"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:text="See all"-->
+<!--                    android:textAlignment="viewEnd"-->
+<!--                    android:textColor="#fe6900"-->
+<!--                    android:textStyle="bold" />-->
+
+
+<!--            </LinearLayout>-->
+
+<!--            <androidx.recyclerview.widget.RecyclerView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="1"-->
+<!--                android:id="@+id/viewPopular"-->
+<!--                android:clipToPadding="false"-->
+<!--                android:paddingEnd="24dp"-->
+<!--                android:paddingStart="24dp"/>-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_marginStart="32dp"-->
+<!--                android:layout_marginTop="24dp"-->
+<!--                android:layout_marginEnd="32dp"-->
+<!--                android:orientation="horizontal">-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/textView10"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:text="New"-->
+<!--                    android:textColor="#000000"-->
+<!--                    android:textSize="20sp"-->
+<!--                    android:textStyle="bold" />-->
+
+
+<!--                <TextView-->
+<!--                    android:id="@+id/textView111"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:text="See all"-->
+<!--                    android:textAlignment="viewEnd"-->
+<!--                    android:textColor="#fe6900"-->
+<!--                    android:textStyle="bold" />-->
+
+
+<!--            </LinearLayout>-->
+<!--            <androidx.recyclerview.widget.RecyclerView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="1"-->
+<!--                android:id="@+id/viewNew"-->
+<!--                android:layout_marginBottom="30dp"-->
+<!--                android:clipToPadding="false"-->
+<!--                android:paddingEnd="24dp"-->
+<!--                android:paddingStart="24dp"/>-->
+
+<!--            &lt;!&ndash;            <RelativeLayout&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:layout_width="wrap_content"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:layout_height="wrap_content">&ndash;&gt;-->
+
+<!--            &lt;!&ndash;                <com.google.android.material.floatingactionbutton.FloatingActionButton&ndash;&gt;-->
+<!--            &lt;!&ndash;                    android:id="@+id/fab"&ndash;&gt;-->
+<!--            &lt;!&ndash;                    android:layout_width="wrap_content"&ndash;&gt;-->
+<!--            &lt;!&ndash;                    android:layout_height="wrap_content"&ndash;&gt;-->
+<!--            &lt;!&ndash;                    android:layout_alignParentEnd="true"&ndash;&gt;-->
+<!--            &lt;!&ndash;                    android:layout_alignParentBottom="false"&ndash;&gt;-->
+<!--            &lt;!&ndash;                    android:layout_marginStart="40dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                    android:layout_marginTop="40dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                    android:layout_marginEnd="38dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                    android:layout_marginBottom="41dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                    android:backgroundTint="@color/green"&ndash;&gt;-->
+<!--            &lt;!&ndash;                    android:src="@drawable/baseline_add_24"&ndash;&gt;-->
+<!--            &lt;!&ndash;                    app:tint="@color/white" />&ndash;&gt;-->
+
+<!--            &lt;!&ndash;            </RelativeLayout>&ndash;&gt;-->
+
+<!--        </LinearLayout>-->
+
+
+
+<!--    </ScrollView>-->
+<!--</androidx.constraintlayout.widget.ConstraintLayout>-->

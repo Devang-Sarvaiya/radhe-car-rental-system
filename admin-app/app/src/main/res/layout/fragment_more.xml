@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.073">
+
+            <LinearLayout
+                android:id="@+id/add_car"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/white_background"
+                android:elevation="8dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.33">
+
+
+                    <ImageView
+                        android:id="@+id/show_all_car"
+                        android:layout_width="55dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="4dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.197"
+                        app:srcCompat="@drawable/show_car_admin" />
+
+                    <TextView
+                        android:id="@+id/crt"
+                        android:layout_width="100dp"
+                        android:layout_height="57dp"
+                        android:layout_marginTop="5dp"
+                        android:clickable="false"
+                        android:cursorVisible="false"
+                        android:ems="10"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:fontFamily="@font/sourcesanspro_semibold"
+                        android:gravity="center"
+                        android:text=" Cars for rent"
+                        android:textColor="@color/orange"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/show_all_car"
+                        app:layout_constraintHorizontal_bias="0.555"
+                        app:layout_constraintStart_toStartOf="@+id/show_all_car"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.961" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/car_gadgets"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/white_background"
+                android:elevation="8dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/add_car"
+                app:layout_constraintVertical_bias="0.073">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.33">
+
+                    <ImageView
+                        android:id="@+id/show_all_driver"
+                        android:layout_width="55dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="4dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.197"
+                        app:srcCompat="@drawable/show_driver_admin" />
+
+                    <TextView
+                        android:id="@+id/dd"
+                        android:layout_width="100dp"
+                        android:layout_height="57dp"
+                        android:clickable="false"
+                        android:cursorVisible="false"
+                        android:ems="10"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:fontFamily="@font/sourcesanspro_semibold"
+                        android:gravity="center"
+                        android:text="Drivers"
+                        android:textColor="@color/orange"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/show_all_driver"
+                        app:layout_constraintHorizontal_bias="0.577"
+                        app:layout_constraintStart_toStartOf="@+id/show_all_driver"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.827" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--        <LinearLayout-->
+        <!--            android:id="@+id/add_car"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="250dp"-->
+        <!--            android:layout_margin="20dp"-->
+        <!--            android:background="@drawable/white_background"-->
+        <!--            android:elevation="10dp"-->
+        <!--            android:orientation="horizontal">-->
+
+        <!--            <androidx.constraintlayout.widget.ConstraintLayout-->
+        <!--                android:layout_width="0dp"-->
+        <!--                android:layout_height="match_parent"-->
+        <!--                android:layout_weight="1">-->
+
+        <!--                <ImageView-->
+        <!--                    android:id="@+id/show_all_car"-->
+        <!--                    android:layout_width="100dp"-->
+        <!--                    android:layout_height="105dp"-->
+        <!--                    android:layout_marginTop="4dp"-->
+        <!--                    android:layout_marginLeft="30dp"-->
+        <!--                    android:layout_marginBottom="4dp"-->
+        <!--                    app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--                    app:layout_constraintStart_toStartOf="parent"-->
+        <!--                    app:layout_constraintTop_toTopOf="parent"-->
+        <!--                    app:srcCompat="@drawable/show_car_admin" />-->
+
+        <!--                <ImageView-->
+
+        <!--                    android:id="@+id/show_all_driver"-->
+        <!--                    android:layout_width="100dp"-->
+        <!--                    android:layout_height="105dp"-->
+        <!--                    android:layout_marginRight="30dp"-->
+        <!--                    app:layout_constraintBottom_toBottomOf="@+id/show_all_car"-->
+        <!--                    app:layout_constraintEnd_toEndOf="parent"-->
+        <!--                    app:layout_constraintTop_toTopOf="@+id/show_all_car"-->
+        <!--                    app:srcCompat="@drawable/show_driver_admin" />-->
+
+        <!--            </androidx.constraintlayout.widget.ConstraintLayout>-->
+        <!--        </LinearLayout>-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+            <LinearLayout
+                android:id="@+id/drivers"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/white_background"
+                android:elevation="8dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.33">
+
+
+                    <ImageView
+                        android:id="@+id/show_all_payment_history"
+                        android:layout_width="55dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="4dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.197"
+                        app:srcCompat="@drawable/book_history_admin" />
+
+                    <TextView
+                        android:id="@+id/df"
+                        android:layout_width="100dp"
+                        android:layout_height="57dp"
+                        android:clickable="false"
+                        android:cursorVisible="false"
+                        android:ems="10"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:fontFamily="@font/sourcesanspro_semibold"
+                        android:gravity="center"
+                        android:text="Bookings"
+                        android:textColor="@color/orange"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/show_all_payment_history"
+                        app:layout_constraintHorizontal_bias="0.555"
+                        app:layout_constraintStart_toStartOf="@+id/show_all_payment_history"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.827" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/compass"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/white_background"
+                android:elevation="8dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/drivers">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.33">
+
+                    <ImageView
+                        android:id="@+id/show_all_book_history"
+                        android:layout_width="55dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="4dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.197"
+                        app:srcCompat="@drawable/payment_history_admin" />
+
+                    <TextView
+                        android:id="@+id/dp_2"
+                        android:layout_width="100dp"
+                        android:layout_height="57dp"
+                        android:clickable="false"
+                        android:cursorVisible="false"
+                        android:ems="10"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:fontFamily="@font/sourcesanspro_semibold"
+                        android:gravity="center"
+                        android:text="Payments"
+                        android:textColor="@color/orange"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/show_all_book_history"
+                        app:layout_constraintHorizontal_bias="0.577"
+                        app:layout_constraintStart_toStartOf="@+id/show_all_book_history"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.827" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+            <LinearLayout
+                android:id="@+id/drivers"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/white_background"
+                android:elevation="8dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.33">
+
+
+                    <ImageView
+                        android:id="@+id/add_tour_place"
+                        android:layout_width="55dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="4dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.197"
+                        app:srcCompat="@drawable/geolocation" />
+
+                    <TextView
+                        android:id="@+id/df"
+                        android:layout_width="100dp"
+                        android:layout_height="57dp"
+                        android:clickable="false"
+                        android:cursorVisible="false"
+                        android:ems="10"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:fontFamily="@font/sourcesanspro_semibold"
+                        android:gravity="center"
+                        android:text="Add Tourism Places"
+                        android:textColor="@color/orange"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/add_tour_place"
+                        app:layout_constraintHorizontal_bias="0.555"
+                        app:layout_constraintStart_toStartOf="@+id/add_tour_place"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.827" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/compass"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/white_background"
+                android:elevation="8dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/drivers">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.33">
+
+                    <ImageView
+                        android:id="@+id/add_saftey"
+                        android:layout_width="55dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="4dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.197"
+                        app:srcCompat="@drawable/health" />
+
+                    <TextView
+                        android:id="@+id/dp_2"
+                        android:layout_width="100dp"
+                        android:layout_height="57dp"
+                        android:clickable="false"
+                        android:cursorVisible="false"
+                        android:ems="10"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:fontFamily="@font/sourcesanspro_semibold"
+                        android:gravity="center"
+                        android:text="Add Safety Instructions"
+                        android:textColor="@color/orange"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/add_saftey"
+                        app:layout_constraintHorizontal_bias="0.577"
+                        app:layout_constraintStart_toStartOf="@+id/add_saftey"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.827" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <!--        <LinearLayout-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="250dp"-->
+        <!--            android:layout_margin="20dp"-->
+        <!--            android:background="@drawable/white_background"-->
+        <!--            android:elevation="10dp"-->
+        <!--            android:orientation="horizontal">-->
+
+        <!--            <androidx.constraintlayout.widget.ConstraintLayout-->
+        <!--                android:id="@+id/show_car"-->
+        <!--                android:layout_width="0dp"-->
+        <!--                android:layout_height="match_parent"-->
+        <!--                android:layout_weight="1">-->
+
+        <!--                <ImageView-->
+        <!--                    android:id="@+id/show_all_book_history"-->
+        <!--                    android:layout_width="100dp"-->
+        <!--                    android:layout_height="105dp"-->
+        <!--                    android:layout_marginLeft="30dp"-->
+        <!--                    android:layout_marginTop="4dp"-->
+        <!--                    android:layout_marginBottom="4dp"-->
+        <!--                    app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--                    app:layout_constraintStart_toStartOf="parent"-->
+        <!--                    app:layout_constraintTop_toTopOf="parent"-->
+        <!--                    app:srcCompat="@drawable/book_history_admin" />-->
+
+        <!--                <ImageView-->
+
+        <!--                    android:id="@+id/show_all_payment_history"-->
+        <!--                    android:layout_width="100dp"-->
+        <!--                    android:layout_height="105dp"-->
+        <!--                    android:layout_marginRight="30dp"-->
+        <!--                    app:layout_constraintBottom_toBottomOf="@+id/show_all_book_history"-->
+        <!--                    app:layout_constraintEnd_toEndOf="parent"-->
+        <!--                    app:layout_constraintTop_toTopOf="@+id/show_all_book_history"-->
+        <!--                    app:srcCompat="@drawable/payment_history_admin" />-->
+
+        <!--            </androidx.constraintlayout.widget.ConstraintLayout>-->
+        <!--        </LinearLayout>-->
+    </LinearLayout>
+
+</ScrollView>

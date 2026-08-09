@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Payment.Main_Payment">
+
+    <Button
+        android:id="@+id/btnPayNow"
+        android:layout_width="248dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="524dp"
+        android:text="Back To Home"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar2" />
+
+    <androidx.appcompat.widget.AppCompatButton
+
+        android:id="@+id/button2"
+        android:layout_width="180dp"
+        android:layout_height="71dp"
+        android:text="Continue"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:visibility="gone"
+        android:textStyle="bold"
+        android:background="@drawable/lg_back_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox"
+        app:layout_constraintVertical_bias="0.719" />
+
+    <TextView
+        android:id="@+id/txt_status"
+        android:layout_width="248dp"
+        android:layout_height="87dp"
+        android:layout_marginTop="52dp"
+        android:gravity="center"
+        android:hint="Wait for Confirmation"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/txt_status"
+        app:layout_constraintStart_toStartOf="@+id/txt_status"
+        app:layout_constraintTop_toBottomOf="@+id/txt_status" />
+
+    <LinearLayout
+        android:id="@+id/drivers"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/green_background"
+        android:elevation="3dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar2">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.33">
+
+
+            <TextView
+                android:id="@+id/dr_email"
+                android:layout_width="100dp"
+                android:layout_height="37dp"
+                android:layout_marginStart="36dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center|left"
+                android:fontFamily="@font/prestigea"
+                android:textStyle="bold"
+                android:text="Price :"
+                android:textColor="@color/black"
+                android:textSize="21sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txt_price"
+                android:layout_width="80dp"
+                android:layout_height="37dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center|right"
+                android:hint="0000"
+                android:textSize="21sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.8"
+                app:layout_constraintStart_toEndOf="@+id/dr_email"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtDriver"
+                android:layout_width="80dp"
+                android:layout_height="37dp"
+                android:layout_marginTop="12dp"
+                android:gravity="center|right"
+                android:hint="5%"
+                android:textSize="21sp"
+                app:layout_constraintEnd_toEndOf="@+id/txt_price"
+                app:layout_constraintHorizontal_bias="0.733"
+                app:layout_constraintStart_toStartOf="@+id/txt_price"
+                app:layout_constraintTop_toBottomOf="@+id/txt_price" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="185dp"
+                android:layout_height="37dp"
+                android:layout_marginTop="12dp"
+                android:gravity="center|left"
+                android:text="Driver charges (5%)"
+                android:fontFamily="@font/prestigea"
+                android:textStyle="bold"
+                android:textSize="21sp"
+                android:textColor="@color/black"
+
+                app:layout_constraintStart_toStartOf="@+id/dr_email"
+                app:layout_constraintTop_toBottomOf="@+id/dr_email" />
+
+            <TextView
+                android:id="@+id/txt_deposit"
+                android:layout_width="80dp"
+                android:layout_height="37dp"
+                android:layout_marginTop="12dp"
+                android:gravity="center|right"
+                android:hint="0000"
+                android:textSize="21sp"
+                app:layout_constraintEnd_toEndOf="@+id/txtDriver"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/txtDriver"
+                app:layout_constraintTop_toBottomOf="@+id/txtDriver" />
+
+            <TextView
+                android:id="@+id/txt_gst"
+                android:layout_width="80dp"
+                android:layout_height="37dp"
+                android:layout_marginTop="12dp"
+                android:gravity="center|right"
+                android:hint="0000"
+                android:textSize="21sp"
+                app:layout_constraintEnd_toEndOf="@+id/txt_deposit"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/txt_deposit"
+                app:layout_constraintTop_toBottomOf="@+id/txt_deposit" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="100dp"
+                android:layout_height="37dp"
+                android:layout_marginTop="12dp"
+                android:gravity="center|left"
+                android:text="Deposit"
+                android:fontFamily="@font/prestigea"
+                android:textStyle="bold"
+                android:textSize="21sp"
+                android:textColor="@color/black"
+
+                app:layout_constraintStart_toStartOf="@+id/textView17"
+                app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+
+            <TextView
+                android:id="@+id/textV"
+                android:layout_width="100dp"
+                android:layout_height="37dp"
+                android:layout_marginTop="12dp"
+                android:gravity="center|left"
+                android:text="Gst 18%"
+                android:textSize="21sp"
+                android:fontFamily="@font/prestigea"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/textView23"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/textView23"
+                app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+            <TextView
+                android:id="@+id/txt_amt"
+                android:layout_width="90dp"
+                android:layout_height="37dp"
+                android:layout_marginTop="12dp"
+                android:gravity="center|right"
+                android:text="00000"
+                android:textColor="@color/green"
+                android:textSize="21sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/txt_gst"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/txt_gst"
+                app:layout_constraintTop_toBottomOf="@+id/txt_gst" />
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="150dp"
+                android:layout_height="37dp"
+                android:gravity="center|left"
+                android:text="Total Amount"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/prestigea"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="@+id/txt_amt"
+                app:layout_constraintStart_toStartOf="@+id/textV"
+                app:layout_constraintTop_toBottomOf="@+id/textV"
+                app:layout_constraintVertical_bias="1.0" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </LinearLayout>
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/textView19"-->
+    <!--        android:layout_width="340dp"-->
+    <!--        android:layout_height="33dp"-->
+    <!--        android:text="fg,kbdnasgkljdsbgd,kab gfdkjsbgkjbfkj"-->
+    <!--        app:layout_constraintBottom_toTopOf="@+id/checkBox"-->
+    <!--        app:layout_constraintEnd_toEndOf="@+id/drivers"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/drivers"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/drivers" />-->
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="308dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:text="Agree with terms and condition"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/drivers"
+        app:layout_constraintVertical_bias="0.067" />
+
+    <TextView
+        android:id="@+id/txt_read_more2"
+        android:layout_width="390dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="66dp"
+        android:text="you agree and consent to the collection, transfer, use, storage, disclosure and sharing of your information as described and collected by us in accordance with this Policy"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+
+    <TextView
+        android:id="@+id/txt_read_more"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:layout_marginEnd="24dp"
+        android:textStyle="bold"
+        android:text="@string/read_more"
+        android:textColor="@color/wallet_holo_blue_light"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_read_more2"
+        app:layout_constraintEnd_toEndOf="@+id/txt_read_more2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:context=".Payment.Main_Payment">-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btnPayNow"-->
+<!--        android:layout_width="219dp"-->
+<!--        android:layout_height="79dp"-->
+<!--        android:text="Pay Now"-->
+<!--        android:textSize="24sp"-->
+<!--        android:textStyle="bold"-->
+<!--        android:visibility="gone"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/progressBar2" />-->
+
+<!--    <androidx.appcompat.widget.AppCompatButton-->
+
+<!--        android:id="@+id/button2"-->
+<!--        android:layout_width="180dp"-->
+<!--        android:layout_height="71dp"-->
+<!--        android:text="Continue"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textSize="24sp"-->
+<!--        android:visibility="gone"-->
+<!--        android:textStyle="bold"-->
+<!--        android:background="@drawable/lg_back_btn"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.498"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/checkBox"-->
+<!--        app:layout_constraintVertical_bias="0.719" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/txt_status"-->
+<!--        android:layout_width="248dp"-->
+<!--        android:layout_height="87dp"-->
+<!--        android:layout_marginTop="52dp"-->
+<!--        android:gravity="center"-->
+<!--        android:hint="Wait for Confirmation"-->
+<!--        android:textSize="24sp"-->
+<!--        android:textStyle="bold"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.496"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--    <ProgressBar-->
+<!--        android:id="@+id/progressBar2"-->
+<!--        style="?android:attr/progressBarStyle"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/txt_status"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/txt_status"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/txt_status" />-->
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/drivers"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="300dp"-->
+<!--        android:layout_marginLeft="20dp"-->
+<!--        android:layout_marginRight="20dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:background="@drawable/green_background"-->
+<!--        android:elevation="3dp"-->
+<!--        android:orientation="horizontal"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/progressBar2">-->
+
+<!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="0.33">-->
+
+
+<!--            <TextView-->
+<!--                android:id="@+id/dr_email"-->
+<!--                android:layout_width="100dp"-->
+<!--                android:layout_height="37dp"-->
+<!--                android:layout_marginStart="36dp"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:gravity="center|left"-->
+<!--                android:fontFamily="@font/prestigea"-->
+<!--                android:textStyle="bold"-->
+<!--                android:text="Price :"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="21sp"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/txt_price"-->
+<!--                android:layout_width="80dp"-->
+<!--                android:layout_height="37dp"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:gravity="center|right"-->
+<!--                android:hint="0000"-->
+<!--                android:textSize="21sp"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintHorizontal_bias="0.8"-->
+<!--                app:layout_constraintStart_toEndOf="@+id/dr_email"-->
+<!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/txtDriver"-->
+<!--                android:layout_width="80dp"-->
+<!--                android:layout_height="37dp"-->
+<!--                android:layout_marginTop="12dp"-->
+<!--                android:gravity="center|right"-->
+<!--                android:hint="5%"-->
+<!--                android:textSize="21sp"-->
+<!--                app:layout_constraintEnd_toEndOf="@+id/txt_price"-->
+<!--                app:layout_constraintHorizontal_bias="0.733"-->
+<!--                app:layout_constraintStart_toStartOf="@+id/txt_price"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/txt_price" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/textView17"-->
+<!--                android:layout_width="185dp"-->
+<!--                android:layout_height="37dp"-->
+<!--                android:layout_marginTop="12dp"-->
+<!--                android:gravity="center|left"-->
+<!--                android:text="Driver charges (5%)"-->
+<!--                android:fontFamily="@font/prestigea"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textSize="21sp"-->
+<!--                android:textColor="@color/black"-->
+
+<!--                app:layout_constraintStart_toStartOf="@+id/dr_email"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/dr_email" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/txt_deposit"-->
+<!--                android:layout_width="80dp"-->
+<!--                android:layout_height="37dp"-->
+<!--                android:layout_marginTop="12dp"-->
+<!--                android:gravity="center|right"-->
+<!--                android:hint="0000"-->
+<!--                android:textSize="21sp"-->
+<!--                app:layout_constraintEnd_toEndOf="@+id/txtDriver"-->
+<!--                app:layout_constraintHorizontal_bias="1.0"-->
+<!--                app:layout_constraintStart_toStartOf="@+id/txtDriver"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/txtDriver" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/txt_gst"-->
+<!--                android:layout_width="80dp"-->
+<!--                android:layout_height="37dp"-->
+<!--                android:layout_marginTop="12dp"-->
+<!--                android:gravity="center|right"-->
+<!--                android:hint="0000"-->
+<!--                android:textSize="21sp"-->
+<!--                app:layout_constraintEnd_toEndOf="@+id/txt_deposit"-->
+<!--                app:layout_constraintHorizontal_bias="0.0"-->
+<!--                app:layout_constraintStart_toStartOf="@+id/txt_deposit"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/txt_deposit" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/textView23"-->
+<!--                android:layout_width="100dp"-->
+<!--                android:layout_height="37dp"-->
+<!--                android:layout_marginTop="12dp"-->
+<!--                android:gravity="center|left"-->
+<!--                android:text="Deposit"-->
+<!--                android:fontFamily="@font/prestigea"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textSize="21sp"-->
+<!--                android:textColor="@color/black"-->
+
+<!--                app:layout_constraintStart_toStartOf="@+id/textView17"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/textView17" />-->
+
+
+<!--            <TextView-->
+<!--                android:id="@+id/textV"-->
+<!--                android:layout_width="100dp"-->
+<!--                android:layout_height="37dp"-->
+<!--                android:layout_marginTop="12dp"-->
+<!--                android:gravity="center|left"-->
+<!--                android:text="Gst 18%"-->
+<!--                android:textSize="21sp"-->
+<!--                android:fontFamily="@font/prestigea"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textColor="@color/black"-->
+<!--                app:layout_constraintEnd_toEndOf="@+id/textView23"-->
+<!--                app:layout_constraintHorizontal_bias="0.0"-->
+<!--                app:layout_constraintStart_toStartOf="@+id/textView23"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/textView23" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/txt_amt"-->
+<!--                android:layout_width="90dp"-->
+<!--                android:layout_height="37dp"-->
+<!--                android:layout_marginTop="12dp"-->
+<!--                android:gravity="center|right"-->
+<!--                android:text="00000"-->
+<!--                android:textColor="@color/green"-->
+<!--                android:textSize="21sp"-->
+<!--                android:textStyle="bold"-->
+<!--                app:layout_constraintEnd_toEndOf="@+id/txt_gst"-->
+<!--                app:layout_constraintHorizontal_bias="1.0"-->
+<!--                app:layout_constraintStart_toStartOf="@+id/txt_gst"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/txt_gst" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/textView24"-->
+<!--                android:layout_width="150dp"-->
+<!--                android:layout_height="37dp"-->
+<!--                android:gravity="center|left"-->
+<!--                android:text="Total Amount"-->
+<!--                android:textSize="22sp"-->
+<!--                android:textStyle="bold"-->
+<!--                android:fontFamily="@font/prestigea"-->
+<!--                android:textColor="@color/black"-->
+<!--                app:layout_constraintBottom_toBottomOf="@+id/txt_amt"-->
+<!--                app:layout_constraintStart_toStartOf="@+id/textV"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/textV"-->
+<!--                app:layout_constraintVertical_bias="1.0" />-->
+
+<!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+
+<!--    </LinearLayout>-->
+
+<!--    &lt;!&ndash;    <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;        android:id="@+id/textView19"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_width="340dp"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_height="33dp"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:text="fg,kbdnasgkljdsbgd,kab gfdkjsbgkjbfkj"&ndash;&gt;-->
+<!--&lt;!&ndash;        app:layout_constraintBottom_toTopOf="@+id/checkBox"&ndash;&gt;-->
+<!--&lt;!&ndash;        app:layout_constraintEnd_toEndOf="@+id/drivers"&ndash;&gt;-->
+<!--&lt;!&ndash;        app:layout_constraintStart_toStartOf="@+id/drivers"&ndash;&gt;-->
+<!--&lt;!&ndash;        app:layout_constraintTop_toBottomOf="@+id/drivers" />&ndash;&gt;-->
+
+<!--    <CheckBox-->
+<!--        android:id="@+id/checkBox"-->
+<!--        android:layout_width="308dp"-->
+<!--        android:layout_height="48dp"-->
+<!--        android:layout_marginStart="16dp"-->
+<!--        android:layout_marginTop="40dp"-->
+<!--        android:text="Agree with terms and condition"-->
+<!--        android:textSize="17dp"-->
+<!--        android:textStyle="bold"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/drivers"-->
+<!--        app:layout_constraintVertical_bias="0.067" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/txt_read_more"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginEnd="44dp"-->
+<!--        android:text="@string/read_more"-->
+<!--        android:textColor="@color/wallet_holo_blue_light"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/checkBox"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/checkBox"-->
+<!--        app:layout_constraintVertical_bias="0.517" />-->
+
+
+<!--</androidx.constraintlayout.widget.ConstraintLayout>-->

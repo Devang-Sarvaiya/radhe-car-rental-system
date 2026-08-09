@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_green"
+    tools:context=".For_new_Project.date_selection">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/topLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+
+            <!-- "Select Date" TextView -->
+            <TextView
+                android:id="@+id/txtModelName"
+                android:layout_width="0dp"
+                android:layout_height="52dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/dastine_oramica"
+                android:gravity="center"
+                android:text="@string/select_date"
+                android:textColor="@color/green"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/cancel_btn"
+                android:layout_width="35dp"
+                android:layout_height="50dp"
+                android:src="@drawable/cancel" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout9"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/green_background"
+            android:elevation="5dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edt_start_date"
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:background="@drawable/custom_input"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:drawableStart="@drawable/calendar_2"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:fontFamily="@font/dosis_bold"
+                android:gravity="center|left"
+                android:hint="@string/starting_date"
+                android:inputType="text"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout10"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/green_background"
+            android:elevation="5dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edt_end_date"
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:background="@drawable/custom_input"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:drawableStart="@drawable/calendar_1"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:fontFamily="@font/dosis_bold"
+                android:gravity="center|left"
+                android:hint="Ending Date"
+                android:inputType="text"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+<!--        <LinearLayout-->
+<!--            android:id="@+id/linearLayout13"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="100dp"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:layout_marginRight="20dp"-->
+<!--            android:background="@drawable/white_background"-->
+<!--            android:elevation="5dp"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/image_picup_location"-->
+<!--                android:layout_width="35dp"-->
+<!--                android:layout_height="35dp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_marginTop="4dp"-->
+<!--                android:layout_marginBottom="4dp"-->
+<!--                android:paddingStart="12dp"-->
+<!--                android:src="@drawable/location_1" />-->
+
+<!--            <Spinner-->
+<!--                android:id="@+id/spin_From"-->
+<!--                android:layout_width="307dp"-->
+<!--                android:layout_height="97dp"-->
+
+<!--                android:layout_marginLeft="10dp" />-->
+<!--        </LinearLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:id="@+id/linearLayout3"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="57dp"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:layout_marginRight="20dp"-->
+<!--            android:layout_marginBottom="8dp"-->
+<!--            android:background="@drawable/white_background"-->
+<!--            android:elevation="5dp"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/edt_TO"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:background="@drawable/custom_input"-->
+<!--                android:drawableStart="@drawable/location"-->
+<!--                android:drawablePadding="12dp"-->
+<!--                android:fontFamily="@font/dosis_bold"-->
+<!--                android:gravity="center_vertical"-->
+<!--                android:hint="@string/to"-->
+<!--                android:inputType="text"-->
+<!--                android:paddingStart="12dp"-->
+<!--                android:paddingEnd="12dp"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="20sp"-->
+<!--                android:textStyle="bold" />-->
+<!--        </LinearLayout>-->
+
+        <LinearLayout
+            android:id="@+id/linearLayout15"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/white_background"
+            android:elevation="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_total_day"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:drawableStart="@drawable/calendar_day"
+                android:drawablePadding="12dp"
+                android:fontFamily="@font/dosis_bold"
+                android:gravity="center|left"
+                android:hint="Day"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:id="@+id/btn_skip"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/gray"
+                android:fontFamily="@font/nunito_extrabold"
+                android:text="@string/skip1"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:id="@+id/btn_find"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/green"
+                android:fontFamily="@font/nunito_extrabold"
+                android:text="@string/find"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

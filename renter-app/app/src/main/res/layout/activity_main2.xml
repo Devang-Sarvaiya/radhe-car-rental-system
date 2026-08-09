@@ -1,0 +1,650 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_green"
+    tools:context=".MainActivity2">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="410dp"
+                android:layout_height="72dp"
+                android:background="@color/green"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    app:cardCornerRadius="150dp">
+
+                    <ImageView
+                        android:id="@+id/imagProfile"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        tools:srcCompat="@tools:sample/avatars" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/txtName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="15dp"
+                    android:fontFamily="@font/prestigea"
+                    android:text="Demo name"
+                    android:textColor="@color/light_green"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/green_background_proback"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/editTextText"
+                    android:layout_width="330dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/login_back"
+                    android:drawableStart="@drawable/baseline_search_24"
+                    android:drawablePadding="8dp"
+                    android:ems="10"
+                    android:hint="Search here..."
+                    android:inputType="text"
+                    android:paddingStart="8dp"
+                    android:textStyle="italic" />
+
+            </LinearLayout>
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="382dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="32dp"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/imgtata"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="15dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/img"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:shapeAppearanceOverlay="@style/roundimageview" />
+                    <!--                    <androidx.cardview.widget.CardView-->
+                    <!--                        android:id="@+id/cardview3"-->
+                    <!--                        android:layout_width="60dp"-->
+                    <!--                        android:layout_height="60dp"-->
+                    <!--                        android:layout_gravity="center"-->
+                    <!--                        android:layout_marginStart="10dp"-->
+                    <!--                        android:layout_marginTop="20dp"-->
+                    <!--                        android:layout_marginBottom="20dp"-->
+                    <!--                        app:cardCornerRadius="150dp">-->
+
+                    <!--                        <ImageView-->
+                    <!--                            android:id="@+id/imgsuzuki"-->
+                    <!--                            android:layout_width="match_parent"-->
+                    <!--                            android:layout_height="match_parent"-->
+                    <!--                            android:scaleType="centerCrop"-->
+                    <!--                            tools:srcCompat="@tools:sample/avatars" />-->
+                    <!--                    </androidx.cardview.widget.CardView>-->
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/imgmahindra"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="20dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/img"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:shapeAppearanceOverlay="@style/roundimageview" />
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/imgsuzuki"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="20dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/img"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:shapeAppearanceOverlay="@style/roundimageview" />
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/imgskoda"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="20dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/img"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:shapeAppearanceOverlay="@style/roundimageview" />
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/imgvolks"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="20dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/img"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:shapeAppearanceOverlay="@style/roundimageview" />
+                    <!--                <TextView-->
+                    <!--                    android:id="@+id/textView1111"-->
+                    <!--                    android:layout_width="wrap_content"-->
+                    <!--                    android:layout_height="wrap_content"-->
+                    <!--                    android:layout_weight="1"-->
+                    <!--                    android:text="See all"-->
+                    <!--                    android:textAlignment="viewEnd"-->
+                    <!--                    android:textColor="#fe6900"-->
+                    <!--                    android:textStyle="bold" />-->
+
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="20dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="20dp">
+
+                <!--        <com.denzcoskun.imageslider.ImageSlider-->
+                <!--            android:id="@+id/imageslider"-->
+                <!--            android:layout_width="match_parent"-->
+                <!--            android:layout_height="200dp"-->
+                <!--            app:iss_auto_cycle="true"-->
+                <!--            app:iss_corner_radius="20"-->
+                <!--            app:iss_delay="10000"-->
+                <!--            app:iss_period="1000" />-->
+
+
+                <!--        <androidx.recyclerview.widget.RecyclerView-->
+                <!--            android:layout_width="match_parent"-->
+                <!--            android:layout_height="match_parent"-->
+                <!--            android:layout_weight="1"-->
+                <!--            android:id="@+id/viewPopular"-->
+                <!--            android:clipToPadding="false"-->
+                <!--            android:paddingEnd="24dp"-->
+                <!--            android:paddingStart="5dp"/>-->
+                <!--        <ImageView-->
+                <!--            android:id="@+id/img"-->
+                <!--            android:layout_width="match_parent"-->
+                <!--            android:layout_height="match_parent"-->
+                <!--            android:src="@drawable/all"-->
+                <!--            android:scaleType="centerInside"/>-->
+
+                                                                                                                                                                                                                                                                                        .
+
+                <androidx.viewpager2.widget.ViewPager2
+                    android:id="@+id/viewPagerImages"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp" />
+            </androidx.cardview.widget.CardView>
+
+            <!--            <LinearLayout-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="match_parent"-->
+            <!--                android:orientation="vertical">-->
+
+            <!--                <LinearLayout-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="80dp"-->
+            <!--                    android:layout_marginTop="16dp"-->
+            <!--                    android:orientation="horizontal">-->
+
+            <!--                    <LinearLayout-->
+            <!--                        android:id="@+id/cat_sports"-->
+            <!--                        android:layout_width="0dp"-->
+            <!--                        android:layout_height="70dp"-->
+            <!--                        android:layout_marginStart="32dp"-->
+            <!--                        android:layout_marginEnd="8dp"-->
+            <!--                        android:layout_weight="0.5"-->
+            <!--                        android:background="@drawable/cat_bg"-->
+            <!--                        android:backgroundTint="@color/light_green"-->
+            <!--                        android:elevation="5dp"-->
+            <!--                        android:orientation="horizontal">-->
+
+            <!--                        <TextView-->
+            <!--                            android:id="@+id/textView8"-->
+            <!--                            android:layout_width="wrap_content"-->
+            <!--                            android:layout_height="28dp"-->
+            <!--                            android:layout_gravity="center"-->
+            <!--                            android:layout_marginStart="16dp"-->
+            <!--                            android:fontFamily="@font/sourcesanspro_semibold"-->
+            <!--                            android:text="Sports"-->
+            <!--                            android:textColor="@color/black"-->
+            <!--                            android:textSize="18sp"-->
+            <!--                            android:textStyle="bold"-->
+            <!--                            app:layout_constraintBottom_toBottomOf="parent"-->
+            <!--                            app:layout_constraintStart_toStartOf="parent"-->
+            <!--                            app:layout_constraintTop_toTopOf="parent"-->
+            <!--                            tools:ignore="DuplicateIds" />-->
+
+            <!--                        <ImageView-->
+            <!--                            android:id="@+id/imageView5"-->
+            <!--                            android:layout_width="61dp"-->
+            <!--                            android:layout_height="73dp"-->
+            <!--                            android:layout_marginLeft="20dp"-->
+            <!--                            android:scaleType="centerInside"-->
+            <!--                            android:src="@drawable/sports_car"-->
+            <!--                            app:layout_constraintBottom_toBottomOf="parent"-->
+            <!--                            app:layout_constraintEnd_toEndOf="parent"-->
+            <!--                            app:layout_constraintTop_toTopOf="parent" />-->
+            <!--                    </LinearLayout>-->
+
+            <!--                    <LinearLayout-->
+            <!--                        android:id="@+id/cat_wedding"-->
+            <!--                        android:layout_width="0dp"-->
+            <!--                        android:layout_height="70dp"-->
+            <!--                        android:layout_marginStart="8dp"-->
+            <!--                        android:layout_marginEnd="32dp"-->
+            <!--                        android:layout_weight="0.5"-->
+            <!--                        android:background="@drawable/cat_bg"-->
+            <!--                        android:backgroundTint="@color/light_green"-->
+            <!--                        android:elevation="5dp"-->
+            <!--                        android:orientation="horizontal">-->
+
+
+            <!--                        <TextView-->
+            <!--                            android:id="@+id/textView8"-->
+            <!--                            android:layout_width="wrap_content"-->
+            <!--                            android:layout_height="wrap_content"-->
+            <!--                            android:layout_gravity="center"-->
+            <!--                            android:layout_marginStart="16dp"-->
+            <!--                            android:fontFamily="@font/sourcesanspro_semibold"-->
+            <!--                            android:text="Wedding"-->
+            <!--                            android:textColor="@color/black"-->
+            <!--                            android:textSize="18sp"-->
+            <!--                            android:textStyle="bold"-->
+            <!--                            app:layout_constraintBottom_toBottomOf="parent"-->
+            <!--                            app:layout_constraintStart_toStartOf="parent"-->
+            <!--                            app:layout_constraintTop_toTopOf="parent"-->
+            <!--                            tools:ignore="DuplicateIds" />-->
+
+            <!--                        <ImageView-->
+            <!--                            android:id="@+id/imageView5"-->
+            <!--                            android:layout_width="45dp"-->
+            <!--                            android:layout_height="65dp"-->
+            <!--                            android:layout_marginStart="15dp"-->
+            <!--                            android:layout_marginEnd="8dp"-->
+            <!--                            android:scaleType="centerInside"-->
+            <!--                            android:src="@drawable/vehicle"-->
+            <!--                            app:layout_constraintBottom_toBottomOf="parent"-->
+            <!--                            app:layout_constraintEnd_toEndOf="parent"-->
+            <!--                            app:layout_constraintTop_toTopOf="parent"-->
+            <!--                            tools:ignore="DuplicateIds" />-->
+            <!--                    </LinearLayout>-->
+            <!--                </LinearLayout>-->
+
+
+            <!--                <LinearLayout-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="80dp"-->
+            <!--                    android:layout_marginTop="16dp"-->
+            <!--                    android:orientation="horizontal">-->
+
+            <!--                    <LinearLayout-->
+            <!--                        android:id="@+id/cat_tour"-->
+            <!--                        android:layout_width="0dp"-->
+            <!--                        android:layout_height="70dp"-->
+            <!--                        android:layout_marginStart="32dp"-->
+            <!--                        android:layout_marginEnd="8dp"-->
+            <!--                        android:layout_weight="0.5"-->
+            <!--                        android:background="@drawable/cat_bg"-->
+            <!--                        android:backgroundTint="@color/light_green"-->
+            <!--                        android:elevation="5dp"-->
+            <!--                        android:orientation="horizontal">-->
+
+            <!--                        <TextView-->
+            <!--                            android:id="@+id/textView8"-->
+            <!--                            android:layout_width="wrap_content"-->
+            <!--                            android:layout_height="wrap_content"-->
+            <!--                            android:layout_gravity="center"-->
+            <!--                            android:layout_marginStart="16dp"-->
+            <!--                            android:fontFamily="@font/sourcesanspro_semibold"-->
+            <!--                            android:text="Tour"-->
+            <!--                            android:textColor="@color/black"-->
+            <!--                            android:textSize="18sp"-->
+            <!--                            android:textStyle="bold"-->
+            <!--                            app:layout_constraintBottom_toBottomOf="parent"-->
+            <!--                            app:layout_constraintStart_toStartOf="parent"-->
+            <!--                            app:layout_constraintTop_toTopOf="parent"-->
+            <!--                            tools:ignore="DuplicateIds" />-->
+
+            <!--                        <ImageView-->
+            <!--                            android:id="@+id/imageView5"-->
+            <!--                            android:layout_width="61dp"-->
+            <!--                            android:layout_height="73dp"-->
+            <!--                            android:layout_gravity="center"-->
+            <!--                            android:layout_marginLeft="30dp"-->
+            <!--                            android:scaleType="centerInside"-->
+            <!--                            android:src="@drawable/car_tour"-->
+            <!--                            app:layout_constraintBottom_toBottomOf="parent"-->
+            <!--                            app:layout_constraintEnd_toEndOf="parent"-->
+            <!--                            app:layout_constraintTop_toTopOf="parent"-->
+            <!--                            tools:ignore="DuplicateIds" />-->
+
+
+            <!--                    </LinearLayout>-->
+
+            <!--                    <LinearLayout-->
+            <!--                        android:id="@+id/cat_all"-->
+            <!--                        android:layout_width="0dp"-->
+            <!--                        android:layout_height="70dp"-->
+            <!--                        android:layout_marginStart="8dp"-->
+            <!--                        android:layout_marginEnd="32dp"-->
+            <!--                        android:layout_weight="0.5"-->
+            <!--                        android:background="@drawable/cat_bg"-->
+            <!--                        android:backgroundTint="@color/light_green"-->
+            <!--                        android:elevation="5dp"-->
+            <!--                        android:orientation="horizontal">-->
+
+            <!--                        <TextView-->
+            <!--                            android:id="@+id/textView8"-->
+            <!--                            android:layout_width="wrap_content"-->
+            <!--                            android:layout_height="wrap_content"-->
+            <!--                            android:layout_gravity="center"-->
+            <!--                            android:layout_marginStart="16dp"-->
+            <!--                            android:fontFamily="@font/sourcesanspro_semibold"-->
+            <!--                            android:text="All"-->
+            <!--                            android:textColor="@color/black"-->
+            <!--                            android:textSize="18sp"-->
+            <!--                            android:textStyle="bold"-->
+            <!--                            app:layout_constraintBottom_toBottomOf="parent"-->
+            <!--                            app:layout_constraintStart_toStartOf="parent"-->
+            <!--                            app:layout_constraintTop_toTopOf="parent"-->
+            <!--                            tools:ignore="DuplicateIds" />-->
+
+            <!--                        <ImageView-->
+            <!--                            android:id="@+id/imageView5"-->
+            <!--                            android:layout_width="61dp"-->
+            <!--                            android:layout_height="73dp"-->
+            <!--                            android:layout_marginStart="58dp"-->
+            <!--                            android:scaleType="centerInside"-->
+            <!--                            android:src="@drawable/all"-->
+            <!--                            app:layout_constraintBottom_toBottomOf="parent"-->
+            <!--                            app:layout_constraintEnd_toEndOf="parent"-->
+            <!--                            app:layout_constraintTop_toTopOf="parent"-->
+            <!--                            tools:ignore="DuplicateIds" />-->
+
+
+            <!--                    </LinearLayout>-->
+            <!--                </LinearLayout>-->
+            <!--            </LinearLayout>-->
+
+            <!--            <LinearLayout-->
+            <!--                android:id="@+id/category"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="match_parent"-->
+            <!--                android:layout_marginStart="32dp"-->
+            <!--                android:layout_marginTop="24dp"-->
+            <!--                android:layout_marginEnd="32dp"-->
+            <!--                android:orientation="horizontal">-->
+
+            <!--                <TextView-->
+            <!--                    android:id="@+id/textView150"-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_weight="1"-->
+            <!--                    android:fontFamily="@font/dosis_extrabold"-->
+            <!--                    android:text="Category"-->
+            <!--                    android:textColor="@color/green"-->
+            <!--                    android:textSize="20sp"-->
+            <!--                    android:textStyle="bold" />-->
+
+
+            <!--            </LinearLayout>-->
+
+            <!--            <LinearLayout-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content">-->
+
+            <!--                <androidx.recyclerview.widget.RecyclerView-->
+            <!--                    android:id="@+id/viewCat"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="match_parent"-->
+            <!--                    android:layout_marginTop="10dp"-->
+            <!--                    android:layout_marginBottom="10dp"-->
+            <!--                    android:layout_weight="1"-->
+            <!--                    android:paddingStart="24dp"-->
+            <!--                    android:paddingEnd="24dp" />-->
+            <!--            </LinearLayout>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="32dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView101"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/dosis_extrabold"
+                    android:text="Popular"
+                    android:textColor="@color/green"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/garamond"
+                    android:text="See all"
+                    android:textAlignment="viewEnd"
+                    android:textColor="#fe6900"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <com.facebook.shimmer.ShimmerFrameLayout
+                android:id="@+id/shimmer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingStart="24dp"
+                android:paddingEnd="24dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <include layout="@layout/my_item_placeholder" />
+
+                    <include layout="@layout/my_item_placeholder" />
+
+                    <include layout="@layout/my_item_placeholder" />
+
+                    <include layout="@layout/my_item_placeholder" />
+
+                    <include layout="@layout/my_item_placeholder" />
+
+                    <include layout="@layout/my_item_placeholder" />
+
+                    <include layout="@layout/my_item_placeholder" />
+
+                    <include layout="@layout/my_item_placeholder" />
+
+                </LinearLayout>
+
+
+            </com.facebook.shimmer.ShimmerFrameLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/viewPopular"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clipToPadding="false"
+                android:paddingStart="24dp"
+                android:paddingEnd="24dp"
+                android:visibility="gone" />
+
+
+            <!--            <LinearLayout-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="match_parent"-->
+            <!--                android:layout_marginStart="32dp"-->
+            <!--                android:layout_marginTop="24dp"-->
+            <!--                android:layout_marginEnd="32dp"-->
+            <!--                android:orientation="horizontal">-->
+
+            <!--                <TextView-->
+            <!--                    android:id="@+id/textView10"-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_weight="1"-->
+            <!--                    android:text="New"-->
+            <!--                    android:fontFamily="@font/dosis_extrabold"-->
+            <!--                    android:textColor="@color/green"-->
+            <!--                    android:textSize="20sp"-->
+            <!--                    android:textStyle="bold" />-->
+
+
+            <!--                <TextView-->
+            <!--                    android:id="@+id/textView111"-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_weight="1"-->
+            <!--                    android:text="See all"-->
+            <!--                    android:textSize="16sp"-->
+            <!--                    android:fontFamily="@font/garamond"-->
+            <!--                    android:textAlignment="viewEnd"-->
+            <!--                    android:textColor="#fe6900"-->
+            <!--                    android:textStyle="bold" />-->
+
+
+            <!--            </LinearLayout>-->
+
+            <!--            <com.facebook.shimmer.ShimmerFrameLayout-->
+            <!--                android:id="@+id/shimmer_1"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="match_parent"-->
+            <!--                android:layout_weight="1"-->
+            <!--                android:gravity="center"-->
+            <!--                android:paddingStart="24dp"-->
+            <!--                android:paddingEnd="24dp">-->
+
+            <!--                <LinearLayout-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="match_parent"-->
+            <!--                    android:orientation="horizontal">-->
+
+            <!--                    <include layout="@layout/my_item_placeholder" />-->
+
+            <!--                    <include layout="@layout/my_item_placeholder" />-->
+
+            <!--                    <include layout="@layout/my_item_placeholder" />-->
+
+            <!--                    <include layout="@layout/my_item_placeholder" />-->
+
+            <!--                    <include layout="@layout/my_item_placeholder" />-->
+
+            <!--                    <include layout="@layout/my_item_placeholder" />-->
+
+            <!--                    <include layout="@layout/my_item_placeholder" />-->
+
+            <!--                    <include layout="@layout/my_item_placeholder" />-->
+
+            <!--                </LinearLayout>-->
+
+
+            <!--            </com.facebook.shimmer.ShimmerFrameLayout>-->
+
+
+            <!--            <androidx.recyclerview.widget.RecyclerView-->
+            <!--                android:id="@+id/viewNew"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="match_parent"-->
+            <!--                android:layout_marginBottom="30dp"-->
+            <!--                android:layout_weight="1"-->
+            <!--                android:clipToPadding="false"-->
+            <!--                android:paddingStart="24dp"-->
+            <!--                android:paddingEnd="24dp"-->
+            <!--                android:visibility="gone" />-->
+
+            <!--            <RelativeLayout-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content">-->
+
+            <!--                <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+            <!--                    android:id="@+id/fab"-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_alignParentEnd="true"-->
+            <!--                    android:layout_alignParentBottom="false"-->
+            <!--                    android:layout_marginStart="40dp"-->
+            <!--                    android:layout_marginTop="40dp"-->
+            <!--                    android:layout_marginEnd="38dp"-->
+            <!--                    android:layout_marginBottom="41dp"-->
+            <!--                    android:backgroundTint="@color/green"-->
+            <!--                    android:src="@drawable/baseline_add_24"-->
+            <!--                    app:tint="@color/white" />-->
+
+            <!--            </RelativeLayout>-->
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

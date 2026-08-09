@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.car_admin">
+    <!-- Permissions for SMS -->
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" /> <!-- Other permissions and features -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-feature android:name="android.hardware.location.gps" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-feature android:name="android.hardware.location.network" />
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Car_Admin"
+        tools:targetApi="31">
+
+
+        <activity
+            android:name=".Tourism.Tourism_Place_Details"
+            android:exported="false" />
+
+        <activity
+            android:name=".Tourism.Tourism_Data_add"
+            android:exported="false" />
+        <activity
+            android:name=".Tourism.Tourism_place_show"
+            android:exported="false" />
+
+        <activity
+            android:name=".Safety_feature.Safety_Feature_Details"
+            android:exported="false" />
+
+        <activity
+            android:name=".Safety_feature.Safety_Data_add"
+            android:exported="false" />
+        <activity
+            android:name=".Safety_feature.Safety_feature_show"
+            android:exported="false" />
+
+
+        <activity
+            android:name=".Driver.Detail_driver"
+            android:exported="false" />
+        <activity
+            android:name=".DriverID"
+            android:exported="false" />
+        <activity
+            android:name=".Driver.Connected_drivers"
+            android:exported="false" />
+        <activity
+            android:name=".UserDetails.Unverified_user"
+            android:exported="false" />
+        <activity
+            android:name=".UserDetails.Verified_user"
+            android:exported="false" />
+        <activity
+            android:name=".Renters_Details.UnVerified_renters"
+            android:exported="false" />
+        <activity
+            android:name=".Renters_Details.Verified_renters"
+            android:exported="false" />
+        <activity
+            android:name=".Cars.All_cars1"
+            android:exported="false" />
+        <activity
+            android:name=".Cars.car_list_mode"
+            android:exported="false" />
+        <activity
+            android:name=".Cars.Detail_of_car"
+            android:exported="false" /> <!-- Activities -->
+        <activity
+            android:name=".SMS"
+            android:exported="true" />
+        <activity
+            android:name=".PaymentHistory.payment_confirm_deny"
+            android:exported="false" />
+        <activity
+            android:name=".All_cars"
+            android:exported="false" />
+        <activity
+            android:name=".Driver.driver_mode"
+            android:exported="false" />
+        <activity
+            android:name=".Driver.add_driver"
+            android:exported="false" />
+        <activity
+            android:name=".Payments"
+            android:exported="false" />
+        <activity
+            android:name=".Booked_cars"
+            android:exported="false" />
+        <activity
+            android:name=".Drivers"
+            android:exported="false" />
+        <activity
+            android:name=".Location_Of_Car.Live_Data_Of_Location"
+            android:exported="true" />
+        <activity
+            android:name=".Approve_Deny_User"
+            android:exported="false" />
+        <activity
+            android:name=".Approve_Deny"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Payment.Main_Payment"
+            android:exported="true" />
+        <activity
+            android:name=".MainFragment"
+            android:exported="true" />
+    </application>
+
+</manifest>
