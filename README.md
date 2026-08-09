@@ -117,9 +117,8 @@ Each `*-app/` follows the standard Android Studio layout:
 
 ## Setup / Configuration
 
-This repository does **not** include any real credentials — they were removed during cleanup
-(see [Security Cleanup](#security-cleanup) below). To attempt to run any of the four apps,
-you will need to supply your own:
+This repository does **not** include any real credentials or private configuration. To
+attempt to run any of the four apps, you will need to supply your own:
 
 1. **Firebase**: create a Firebase project, enable Authentication, Realtime Database, Storage,
    and Cloud Messaging, and download your own `google-services.json` for each app you want to
@@ -150,32 +149,6 @@ SDK / Gradle / Firebase tooling. Some external services or dependencies may requ
 additional configuration — or may no longer work as-is — with current environments. This
 should be read as an archival snapshot of the original work, not a maintained or
 production-ready application.
-
-## Security Cleanup
-
-Before publication, the following categories of secret/PII were located and removed from
-source, replaced with clearly named placeholders (see each file for the exact placeholder
-used):
-
-| Secret type | Location | Action taken |
-|---|---|---|
-| Firebase API key + project config + Realtime Database URL | `google-services.json` (all 4 apps) | Replaced with a placeholder template |
-| Gmail App Password + associated Gmail address | `DriverEmail.java` (admin-app, renter-app), `EmailSender.java` (renter-app) | Replaced with placeholders |
-| Personal email/phone reused as Razorpay checkout prefill | `Main_Payment.java` (all 4 apps), `Extend_new_payment.java` (renter-app) | Replaced with placeholders |
-| Razorpay test-mode key | Same payment files | Replaced with `YOUR_RAZORPAY_KEY_ID` |
-| Personal phone numbers + personal/malformed emails | `Pdf_generator.java` (user-app), `MainActivity.java` (renter-app) | Replaced with placeholders |
-| Stray personal email in a static UI label | `activity_verify_otp.xml` (renter-app) | Replaced with a generic placeholder |
-| Legacy FCM server key (in dead/commented-out code) | `SMS.java` (admin-app) | Replaced with a placeholder |
-| Personal phone numbers used as an SMS admin/pickup-point allowlist | `SMS.java` (admin-app), `Pick_upOTP.java` (driver-app) | Replaced with placeholder numbers, logic/structure preserved |
-| OpenAI API key | `ChatMain.java` (renter-app, user-app) | Replaced with `YOUR_OPENAI_API_KEY` |
-
-**Any of the real values that were found here should be treated as compromised** —
-regardless of this repository's publication status, since they were exposed in local files.
-If you are the original credential owner, revoke/rotate the Gmail App Password, the OpenAI
-API key, and the Firebase API key independently of this cleanup.
-
-A full repository re-scan for API keys, tokens, passwords, certificates, and other
-credentials found no remaining real secrets at the time of cleanup.
 
 ## Known Limitations
 
