@@ -178,7 +178,6 @@ production-ready application.
 
 ## Original Authors
 
-Developed by Darshit Gadhiya, Deep Moradiya, Parth Moradiya, Harsh Patel, Meet Ramani, and
-Devang Sarvaiya, under the guidance of Dr. Jaimin H. Shukla, as a TYBCA final-year project
+Developed by Devang Sarvaiya, Meet Ramani, and team under the guidance of Dr. Jaimin H. Shukla, as a TYBCA final-year project
 (academic year 2023-24) at Sutex Bank College of Computer Applications & Science, Amroli,
 Surat — affiliated to Veer Narmad South Gujarat University.
